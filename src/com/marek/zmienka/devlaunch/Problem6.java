@@ -7,7 +7,7 @@ public class Problem6 {
         System.out.println("#### Sum numbers");
         Scanner s = new Scanner(System.in);
         System.out.println("how many mumbers u want to sum?");
-        long sum = 0;
+        int sum = 0;
         int length = s.nextInt();
         if (length < 0) {
             throw new IllegalArgumentException("Wrong number");
