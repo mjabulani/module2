@@ -5,10 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
-
-    startProgram();
-
+        startProgram();
     }
 
     public static void startProgram() {
@@ -23,9 +20,7 @@ public class Main {
             case 1:
                 Problem1.compareNumber();
                 break;
-
         }
-
     }
 
     public static String availableOptions() {
