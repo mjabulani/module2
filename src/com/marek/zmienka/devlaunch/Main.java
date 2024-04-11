@@ -22,6 +22,10 @@ public class Main {
                 break;
             case 2:
                 Problem2.calcAvg();
+                break;
+            case 3:
+                Problem3.findMin();
+                break;
         }
     }
 
