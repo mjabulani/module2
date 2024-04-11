@@ -20,12 +20,14 @@ public class Main {
             case 1:
                 Problem1.compareNumber();
                 break;
+            case 2:
+                Problem2.calcAvg();
         }
     }
 
     public static String availableOptions() {
         return "0 - list of programs\n" +
                 "1 - compare number\n" +
-                "2 - asd";
+                "2 - calculate average of 3 given numbers";
     }
 }
