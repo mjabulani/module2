@@ -28,12 +28,19 @@ public class Main {
                 break;
             case 4:
                 Problem4.drawTriangle();
+                break;
+            case 5:
+                Problem5.printAllNumbers();
+                break;
         }
     }
 
     public static String availableOptions() {
         return "0 - list of programs\n" +
                 "1 - compare number\n" +
-                "2 - calculate average of 3 given numbers";
+                "2 - calculate average of 3 given numbers\n" +
+                "3 - find min value\n" +
+                "4 - draw triangle\n" +
+                "5 - print all numbers";
     }
 }
