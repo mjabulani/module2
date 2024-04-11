@@ -26,6 +26,8 @@ public class Main {
             case 3:
                 Problem3.findMin();
                 break;
+            case 4:
+                Problem4.drawTriangle();
         }
     }
 
