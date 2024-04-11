@@ -32,6 +32,9 @@ public class Main {
             case 5:
                 Problem5.printAllNumbers();
                 break;
+            case 6:
+                Problem6.sumNumbers();
+                break;
         }
     }
 
@@ -41,6 +44,7 @@ public class Main {
                 "2 - calculate average of 3 given numbers\n" +
                 "3 - find min value\n" +
                 "4 - draw triangle\n" +
-                "5 - print all numbers";
+                "5 - print all numbers\n" +
+                "6 - sum all numbers";
     }
 }
