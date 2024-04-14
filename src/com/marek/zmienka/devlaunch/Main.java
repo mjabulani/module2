@@ -39,6 +39,8 @@ public class Main {
                 Problem7.run();
             case 8:
                 Problem8.run();
+            case 9:
+                Problem9.run();
         }
     }
 
