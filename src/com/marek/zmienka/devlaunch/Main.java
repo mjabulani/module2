@@ -35,6 +35,8 @@ public class Main {
             case 6:
                 Problem6.sumNumbers();
                 break;
+            case 7:
+                Problem7.run();
         }
     }
 

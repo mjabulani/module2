@@ -9,13 +9,13 @@ public class Problem6 {
         System.out.println("how many mumbers u want to sum?");
         int sum = 0;
         int length = s.nextInt();
-        if (length < 0) {
+        if (length <= 0) {
             throw new IllegalArgumentException("Wrong number");
         } else {
             for (int i = 1; i <= length; i++) {
                 sum = sum + i;
             }
-            System.out.println(sum);
+            System.out.println("Sum = " + sum);
         }
     }
 }
