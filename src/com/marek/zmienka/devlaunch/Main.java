@@ -9,6 +9,7 @@ public class Main {
     }
 
     public static void startProgram() {
+        Calculator calc = new Calculator();
         Scanner s = new Scanner(System.in);
         System.out.println("Which program you want to run? Press 0 to see your options.");
         int problem = s.nextInt();
@@ -37,10 +38,16 @@ public class Main {
                 break;
             case 7:
                 Problem7.run();
+                break;
             case 8:
                 Problem8.run();
+                break;
             case 9:
                 Problem9.run();
+                break;
+            case 10:
+                calc.run();
+
         }
     }
 

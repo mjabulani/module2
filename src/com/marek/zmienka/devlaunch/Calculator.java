@@ -9,22 +9,42 @@ public class Calculator {
 
     public void run() {
 
+        start();
+    }
+
+    private void start() {
+        Scanner s = new Scanner(System.in);
         System.out.println(printOperations());
         char operation = getOperationFromUser();
-        if (isOperationValid(getOperationFromUser())) {
-            System.out.println("First number: ");
+        if (isOperationValid(operation)) {
+            System.out.println("A: ");
             int a = getNumberFromUser();
-            System.out.println("Second number: ");
+            System.out.println("B: ");
             int b = getNumberFromUser();
-            if (operation == '+') {
-                add(a, b);
+            switch (operation) {
+                case '+':
+                    System.out.println("A + B = " + add(a, b));
+                    break;
+                case '-':
+                    System.out.println("A - B = " + subtract(a, b));
+                    break;
+                case '/':
+                    if (a != 0 && b != 0) {
+                        System.out.println("A / B = " + divide(a, b));
+                        break;
+                    }
+                case '*':
+                    System.out.println("A * B = " + multiply(a, b));
+                    break;
             }
-
-            if ()
-        }
-         else {
-            System.out.println("Operation does not exist!");
-            run();
+            System.out.println("Do you want to calculate sth else?");
+            String quit = s.nextLine();
+            if (quit.equalsIgnoreCase("y")) {
+                start();
+            }
+        } else {
+            System.out.println("Wrong choice! Start over again!");
+            start();
         }
     }
 
@@ -34,10 +54,12 @@ public class Calculator {
                 "/ - divide\n" +
                 "* - multiply";
     }
+
     private char getOperationFromUser() {
         System.out.println("Select operation: ");
         return s.nextLine().charAt(0);
     }
+
     private boolean isOperationValid(char operation) {
         ArrayList<Character> availableOperations = new ArrayList<Character>();
         availableOperations.add('+');
@@ -65,36 +87,10 @@ public class Calculator {
     }
 
     private double divide(int a, int b) {
-        return (double) a/b;
+        return (double) a / b;
     }
 
     private int multiply(int a, int b) {
         return a * b;
     }
-
-//    public void start() {
-//
-//        System.out.println("Podaj dwie liczby");
-//        Scanner s = new Scanner(System.in);
-//        System.out.println("A: ");
-//        int firstNumber = s.nextInt();
-//        System.out.println("B: ");
-//        int secondNumber = s.nextInt();
-//
-//
-//        ArrayList<Character> availableOperations = new ArrayList<Character>();
-//        availableOperations = ['+', '-', '*', '/'];
-//        System.out.println("Jaką operację chcesz wykonać? \n" +
-//                "+ - dodawanie\n" +
-//                "- - odejmowanie\n" +
-//                "* - mnożenie\n" +
-//                "/ - dzielenie");
-//        String operation = s.nextLine();
-//        if (availableOperations.contains(operation)) {
-//
-//        } else {
-//            System.out.println("Niepoprawny wybór, spróbj ponownie wskazać operacje ");
-//        }
-//
-//    }
 }
