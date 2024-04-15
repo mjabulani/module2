@@ -51,6 +51,10 @@ public class Main {
                 "3 - find min value\n" +
                 "4 - draw triangle\n" +
                 "5 - print all numbers\n" +
-                "6 - sum all numbers";
+                "6 - sum all numbers\n" +
+                "7 - fibonacci\n" +
+                "8 - calculate factorial\n" +
+                "9 - palindrom tester\n" +
+                "10 - calculator";
     }
 }

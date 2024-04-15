@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Problem8 {
 
-
     public static void run() {
         System.out.println("Program caluclates factorial of given integer");
         Scanner s = new Scanner(System.in);
@@ -17,7 +16,6 @@ public class Problem8 {
         if (number > 0) {
             int temp = 1;
             for (int i = 1; i <= number; i++) {
-
                 temp = temp * i;
             }
             return temp;

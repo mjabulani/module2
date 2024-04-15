@@ -1,4 +1,5 @@
 package com.marek.zmienka.devlaunch;
+
 import java.util.Scanner;
 
 public class Problem6 {
